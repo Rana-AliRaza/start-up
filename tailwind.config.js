@@ -19,7 +19,7 @@ export default {
         "2xl": "1320",
       },
       colors: {
-        success: "#0A6F26",
+        primary: "#2C87F2",
         "light-success": "#1bbc482b",
         warning: "#F88011",
         "light-warning": "#f880112b",
@@ -27,8 +27,10 @@ export default {
         "light-error": "#f265652b",
         darkForest: "#01320f",
         bgColor: "#c2c2c2",
-        "primary-text": "#828282",
-        "secondary-text": "#373737",
+        bgLight: "#0085FF2B",
+        "primary-text": "#484C52",
+        "secondary-text": "#E93E3E",
+        "-text-dark": "#000000",
         "light-blue": "#3F7FDE",
       },
       backgroundImage: {
@@ -41,7 +43,7 @@ export default {
         "orange-gradient": "linear-gradient(180deg, #ED8612 0%, #FE7E59 100%)",
       },
       boxShadow: {
-        "primary-shadow": "0px 0px 45px 19px rgba(0, 0, 0, 0.03)",
+        "primary-shadow": "0px 0px 45px 19px #2C87F2",
         "secondary-shadow": "0px 3.353px 8.382px 0px rgba(0, 0, 0, 0.10);",
         "red-shadow": "0px 10px 23px 0px rgba(245, 66, 69, 0.50);",
         "blue-shadow": "0px 10px 23px 0px rgba(26, 143, 251, 0.50);",

@@ -8,7 +8,7 @@ const Input = ({
   className,
   inputClass,
   label,
-  labelClass,
+  labelClass ,
   onChange,
   name,
   id,
