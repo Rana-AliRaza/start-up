@@ -50,6 +50,7 @@ const Login = () => {
             <Button text={"Login"}  className={"btn-primary w-full  mt-10"} />
           </div>
         </div>
+        
       </div>
     </div>
   );

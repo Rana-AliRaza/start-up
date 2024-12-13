@@ -19,7 +19,7 @@ const Register = () => {
         </div>
         <div className="flex-1  flex items-center object-contain">
           <div className="flex  flex-col gap-4 w-full max-w-[400px] mx-auto items-center">
-            <h2 className="font-semibold">
+            <h2 className="font-semibold mb-8">
               Register
             </h2>
 
@@ -31,7 +31,7 @@ const Register = () => {
               placeholder={"Type here..."}
             />
 
-            <Link  to="/verify" className="bg-primary w-full " > Next </Link>
+            <Button  to="/verify"  text={'Next'} className="bg-primary text-white font-medium w-full mt-4" > Next </Button>
           </div>
         </div>
       </div>

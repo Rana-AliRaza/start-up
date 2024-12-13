@@ -6,6 +6,9 @@ import Register from "./page/account/register";
 import ResetPassword from "./page/account/resetPassword";
 import About from "./page/about";
 import Verify from "./page/account/verify";
+import Sidebar from "./components/layout/sidebarr/sidebar";
+import Layout from "./components/layout/Layout";
+// import Home from "./page/home/index";
 
 
 function App() {
@@ -13,13 +16,17 @@ function App() {
     <>
       <Routes>
 
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/register" element={<Register />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/resetpassword" element={<ResetPassword />} />
+        <Route path="/changepass" element={<ResetPassword />} />
 
-        <Route path="/components" element={<Home />} />
+        <Route path="/" element={ <Layout><Home /></Layout> } />
+
+
+
+        <Route path="/sidebar" element={<Sidebar />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/about" element={<About />} />
       </Routes>

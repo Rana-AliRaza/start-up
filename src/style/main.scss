@@ -25,3 +25,7 @@
 // pages
 @use "./page/home";
 @use "./page/account";
+
+.blackShadow{
+    box-shadow: 0px 0px 1px 1px rgba(242, 240, 240, 0.7) ;
+}
