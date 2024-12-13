@@ -8,8 +8,9 @@ import About from "./page/about";
 import Verify from "./page/account/verify";
 import Sidebar from "./components/layout/sidebarr/sidebar";
 import Layout from "./components/layout/Layout";
+import Message from "./page/message";
 // import Home from "./page/home/index";
-
+Message
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/changepass" element={<ResetPassword />} />
 
         <Route path="/" element={ <Layout><Home /></Layout> } />
+        <Route path="/message" element={ <Message />} />
 
 
 
