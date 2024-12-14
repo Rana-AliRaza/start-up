@@ -1,10 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import SvgWrapper from "../../../../utils/svgWrapper";
 import { sideIcons } from "../../../../utils/icons";
 import navLogoBig from "/images/navLogoBig.png";
 
+
 const Sidebar = () => {
+  const navigate = useNavigate();
   const sideItems = [
     { id: 1, icon: sideIcons.Home, label: "Home", path: "/home" },
     { id: 2, icon: sideIcons.Access, label: "Access", path: "/access" },
@@ -31,14 +33,15 @@ const Sidebar = () => {
     },
     { id: 9, icon: sideIcons.Setting, label: "Settings", path: "/settings" },
   ];
+  
 
   return (
-    <aside className="fixed h-screen  text-white w-64 shadow-md shadow-gray-600 max:w-[260px] transition-all duration-300">
-      <div className="flex flex-col items-start py-5 pl-3  w-36 h-14  border-b border-gray-700">
-        <img src={navLogoBig} alt="nav logo" className="object-contain" />
+    <aside className="fixed h-full bg-white  text-white w-64 shadow-md shadow-gray-600 max:w-[260px] transition-all duration-300">
+      <div className="flex justify-start  items-start pt-5 pl-3   border-b border-gray-700 cursor-pointer "onClick={()=>navigate('/')}>
+        <img src={navLogoBig} alt="nav logo" className="w-36 h-14 " />
       </div>
 
-      <nav className="mt-6 px-2">
+      <nav className="mt-2 px-2">
         <ul className="space-y-2">
           {sideItems.map((item) => (
             <li key={item.id}>

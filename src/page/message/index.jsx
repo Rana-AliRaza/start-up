@@ -5,6 +5,7 @@ import Sidebar from './messageSidebar';
 import Chatting from './Chatting';
 import Chat from './Chat';
 import './message.scss';
+import Devider from '../../components/Devider';
 
 
 const Message = () => {
@@ -13,7 +14,10 @@ const Message = () => {
         <div className="message-nav px-4">
           <Navbar/>
         </div>
-       <Title heading='Messages' />
+        <div className="devide flex items-center gap-x-2">
+         <Title heading='Messages' />
+         <Devider height={2}/>
+        </div>
        <div className="layout flex justify-between gap-x-4">
          <div className="sidebar">
            <Sidebar/>
