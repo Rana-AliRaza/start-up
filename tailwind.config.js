@@ -41,8 +41,7 @@ export default {
           "linear-gradient(180deg, #10E933 0%, #1AD4AE 100%)",
         "purple-gradient": "linear-gradient(180deg, #B710F6 0%, #931BE8 100%)",
         "orange-gradient": "linear-gradient(180deg, #ED8612 0%, #FE7E59 100%)",
-      },
-      boxShadow: {
+      },      boxShadow: {
         "primary-shadow": "0px 0px 1px 2px #66686b",
         "secondary-shadow": "0px 3.353px 8.382px 0px rgba(0, 0, 0, 0.10);",
         "red-shadow": "0px 10px 23px 0px rgba(245, 66, 69, 0.50);",

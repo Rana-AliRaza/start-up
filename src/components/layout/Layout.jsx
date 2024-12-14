@@ -5,7 +5,7 @@ import Navbar from './navbar';
 
 const Layout = ({children}) => {
   return (
-    <section className='layout-sec rounded-3xl overflow-hidden'>
+    <section className='layout-sec rounded-3xl   '>
         <div className="  flex ">
             <div className="sidebar">
                 <Sidebar/>

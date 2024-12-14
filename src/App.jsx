@@ -9,8 +9,8 @@ import Verify from "./page/account/verify";
 import Sidebar from "./components/layout/sidebarr/sidebar";
 import Layout from "./components/layout/Layout";
 import Message from "./page/message";
-// import Home from "./page/home/index";
-Message
+import Profile from "./page/profile";
+
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
 
         <Route path="/" element={ <Layout><Home /></Layout> } />
         <Route path="/message" element={ <Message />} />
+        <Route path="/profile" element={ <Layout><Profile /></Layout> } />
 
 
 
