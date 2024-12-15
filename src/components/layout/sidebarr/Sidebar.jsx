@@ -8,7 +8,7 @@ import navLogoBig from "/images/navLogoBig.png";
 const Sidebar = () => {
   const navigate = useNavigate();
   const sideItems = [
-    { id: 1, icon: sideIcons.Home, label: "Home", path: "/home" },
+    { id: 1, icon: sideIcons.Home, label: "Home", path: "/" },
     { id: 2, icon: sideIcons.Access, label: "Access", path: "/access" },
     { id: 3, icon: sideIcons.Account, label: "Account", path: "/account" },
     {
@@ -49,7 +49,7 @@ const Sidebar = () => {
                 to={item.path}
                 className={({ isActive }) =>
                   `flex items-center px-4 py-3 text-gray-400 text-base  hover:bg-bgLight hover:text-primary  rounded-md transition-all duration-200 ${
-                    isActive ? "bg-gray-700  text-primary" : ""
+                    isActive ? "bg-blue-200  text-primary" : ""
                   }`
                 }
               >
@@ -65,7 +65,7 @@ const Sidebar = () => {
               to="/"
               className={({ isActive }) =>
                 `flex items-center px-4 py-3 text-base hover:bg-bgLight   text-secondary-text  rounded-md transition-all duration-200 ${
-                  isActive ? "  text-primary" : ""
+                  isActive ? "  text-primary " : ""
                 }`
               }
             >

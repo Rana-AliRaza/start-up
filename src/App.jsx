@@ -10,6 +10,7 @@ import Sidebar from "./components/layout/sidebarr/sidebar";
 import Layout from "./components/layout/Layout";
 import Message from "./page/message";
 import Profile from "./page/profile";
+import Access from "./page/access";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={ <Layout><Home /></Layout> } />
         <Route path="/message" element={ <Message />} />
         <Route path="/profile" element={ <Layout><Profile /></Layout> } />
+        <Route path="/access" element={ <Layout><Access /></Layout> } />
 
 
 

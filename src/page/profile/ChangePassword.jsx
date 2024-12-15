@@ -4,7 +4,7 @@ import { FaRegEdit } from "react-icons/fa";
 import Title from "../../components/Title";
 import Input from "../../components/shared/input";
 import Devider from "../../components/Devider";
-Button
+
 
 const ChangePassword = () => {
       const [isModalOpen, setIsModalOpen] = useState(false);
