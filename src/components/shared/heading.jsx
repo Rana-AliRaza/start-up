@@ -2,7 +2,7 @@ import React from "react";
 
 const Heading = ({ title }) => {
   return (
-    <div className="heading py-2 pb-8">
+    <div className="heading py-2 ">
       <h4 className="text-gray-600 text-xl font-medium main-heading">
         {title}
       </h4>

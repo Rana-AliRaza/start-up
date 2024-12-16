@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({data}) => {
+const Cards = ({data}) => {
 
   return (
     <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4 w-full'>
@@ -14,7 +14,7 @@ const Card = ({data}) => {
                         backgroundClip: "text",
                         WebkitBackgroundClip: "text",
                         }}> {label} </h4>
-                   <p className='text-xl text-center w-fit mx-auto mt-2 text-gray-700'> {desc} </p>
+                   <p className='text-xl text-center  mx-auto mt-2 text-gray-700 w-3/4'> {desc} </p>
                 </div>
             ))
 
@@ -25,4 +25,4 @@ const Card = ({data}) => {
   )
 }
 
-export default Card
+export default Cards

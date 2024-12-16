@@ -1,8 +1,11 @@
 import React from 'react';
 import { Table, Checkbox } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
+import { useNavigate } from 'react-router-dom';
 
-const AccessTable = () => {
+
+const AccessTable = ({viewNavigate, view = false,}) => {
+  const navigate = useNavigate();
     const columns = [
         {
           title: "User",
@@ -36,7 +39,16 @@ const AccessTable = () => {
           dataIndex: "action",
           key: "action",
           render: () => (
-            <DeleteOutlined className="text-red-500 cursor-pointer hover:text-red-700" />
+            <>
+            {
+             view && <span className='inline-block mr-3 text-green-600 cursor-pointer hover:text-green-700 hover:font-medium' onClick={navigate({viewNavigate})} > 
+               View
+             </span>
+
+            }
+             <DeleteOutlined className="text-red-500 cursor-pointer hover:text-red-700" />
+            </>
+            
           ),
           align: "center",
         },

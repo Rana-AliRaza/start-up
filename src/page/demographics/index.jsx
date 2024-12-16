@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../components/shared/heading";
 import ApexChart from "../../components/shared/apexChart";
-import HomeCards from "../../components/shared/Cards";
+import Cards from "../../components/shared/Cards";
 const Demographics = () => {
   const chartData = [
     {
@@ -62,7 +62,7 @@ const Demographics = () => {
       <Heading title="Demographics" />
       
       <div className="demographic-cards">
-        <HomeCards data={cardData} />
+        <Cards data={cardData} />
       </div>
 
       <div className="charts grid grid-cols-2 gap-4 flex-wrap  mt-8">
