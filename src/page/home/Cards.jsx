@@ -55,7 +55,7 @@ const HomeCards = () => {
     <div className='home-cards grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4'>
         {
             homeCards.map(({id, label, desc, color})=>(
-                <div key={id} className='p-4 py-6 w-full text-center bg-white blackShadow shadow-sm  rounded-3xl gap-y-4 '>
+                <div key={id} className='p-4    py-6 w-full text-center bg-white blackShadow shadow-sm  rounded-3xl gap-y-4 '>
                    <h4 className={`text-3xl font-semibold  `} style={{ color:color}}> {label} </h4>
                    <p className='text-xl text-center w-fit mx-auto mt-2'> {desc} </p>
                 </div>

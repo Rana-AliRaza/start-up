@@ -31,7 +31,7 @@ const Sidebar = () => {
       label: "Demographics",
       path: "/demographics",
     },
-    { id: 9, icon: sideIcons.Setting, label: "Settings", path: "/settings" },
+    { id: 9, icon: sideIcons.Setting, label: "Settings", path: "/setting" },
   ];
   
 
@@ -41,7 +41,7 @@ const Sidebar = () => {
         <img src={navLogoBig} alt="nav logo" className="w-36 h-14 " />
       </div>
 
-      <nav className="mt-2 px-2">
+      <nav className="mt-6 px-2">
         <ul className="space-y-2">
           {sideItems.map((item) => (
             <li key={item.id}>
@@ -60,7 +60,7 @@ const Sidebar = () => {
               </NavLink>
             </li>
           ))}
-          <div className="logout">
+          <div className="logout" onClick={()=>navigate('/login')}>
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -69,7 +69,7 @@ const Sidebar = () => {
                 }`
               }
             >
-              <span className="w-6 h-6 mr-3 text-secondary-text">
+              <span className="w-6 h-6 mr-3 text-secondary-text" >
                 <SvgWrapper icon={sideIcons.Logout} size={20} color="" />
               </span>
               Log out

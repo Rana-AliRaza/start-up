@@ -6,11 +6,19 @@ import Register from "./page/account/register";
 import ResetPassword from "./page/account/resetPassword";
 import About from "./page/about";
 import Verify from "./page/account/verify";
-import Sidebar from "./components/layout/sidebarr/sidebar";
+import Sidebar from "./components/layout/sidebar/Sidebar";
 import Layout from "./components/layout/Layout";
 import Message from "./page/message";
 import Profile from "./page/profile";
 import Access from "./page/access";
+import Account from "./page/account";
+import Appoinments from "./page/appointments";
+import Tasks from "./page/tasks";
+import Inventory from "./page/invertory";
+import Sales from "./page/sales";
+import Demographics from "./page/demographics";
+import Setting from "./page/setting";
+
 
 
 function App() {
@@ -28,6 +36,13 @@ function App() {
         <Route path="/message" element={ <Message />} />
         <Route path="/profile" element={ <Layout><Profile /></Layout> } />
         <Route path="/access" element={ <Layout><Access /></Layout> } />
+        <Route path="/account" element={ <Layout><Account /></Layout> } />
+        <Route path="/appointments" element={ <Layout><Appoinments /></Layout> } />
+        <Route path="/tasks" element={ <Layout><Tasks /></Layout> } />
+        <Route path="/inventory" element={ <Layout><Inventory /></Layout> } />
+        <Route path="/sales" element={ <Layout><Sales /></Layout> } />
+        <Route path="/demographics" element={ <Layout><Demographics /></Layout> } />
+        <Route path="/setting" element={ <Layout><Setting /></Layout> } />
 
 
 

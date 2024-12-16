@@ -19,7 +19,7 @@ const Access = () => {
     setIsModalOpen(false);
   };
   return (
-    <section className="p-8 mt-4 ">
+    <section className="access-sec p-8 mt-4 ">
       <div className="top flex justify-between items-center py-2 ">
         <h4 className="text-gray-700 text-xl font-medium ">
           Manage Roles & Access
