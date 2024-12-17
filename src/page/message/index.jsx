@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from '../../components/layout/navbar'
-import Title from '../../components/Title'
 import Sidebar from './messageSidebar';
 import Chatting from './Chatting';
 import Chat from './Chat';
 import './message.scss';
 import Devider from '../../components/Devider';
+import Heading from '../../components/shared/heading';
 
 
 const Message = () => {
@@ -15,7 +15,7 @@ const Message = () => {
           <Navbar/>
         </div>
         <div className="devide flex items-center gap-x-2">
-         <Title heading='Messages' />
+         <Heading heading='Messages' />
          <Devider height={2}/>
         </div>
        <div className="layout flex justify-between gap-x-4">

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Button, Modal } from "antd";
 import DropDown from "./DropDown";
-import Title from "../../components/Title";
 import Input from "../../components/shared/input";
 import Devider from "../../components/Devider";
 import AccessTable from "./AccessTable";
 import AccessPagination from "./Pagination";
+import Heading from "../../components/shared/heading";
 
 const Access = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -66,7 +66,7 @@ const Access = () => {
         >
           <div className="new-message rounded-lg  py-4 text-gray-700 text-sm">
             <div className="flex gap-x-2 items-center">
-                <Title heading="Create" path="/access" />
+                <Heading heading="Create" path="/access" />
                 <Devider height='1px' />
             </div>
             <div className="pl-8 py-4 grid grid-cols-2 gap-x-8 gap-y-4 w-full mt-4 text-gray-600">

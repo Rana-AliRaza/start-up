@@ -1,11 +1,11 @@
 import React from 'react'
-import Title from '../../components/Title'
 import Content from './Content'
+import Heading from '../../components/shared/heading'
 
 const Profile = () => {
   return (
     <section className='profile-sec py-4 px-2 mt-4'>
-        <Title heading='Profile'/>
+        <Heading heading='Profile'/>
         <Content />
       
     </section>

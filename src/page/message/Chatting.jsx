@@ -5,10 +5,10 @@ import { Divider } from "antd";
 import smile from "/images/smile.png";
 import sendbtn from "/images/send-btn.png";
 import { Modal } from "antd";
-import Title from "../../components/Title";
 import Input from "../../components/shared/input";
 import { Button, message, Upload } from "antd";
 import { UploadOutlined } from '@ant-design/icons';
+import Heading from "../../components/shared/heading";
 
 const Chatting = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -71,7 +71,7 @@ const Chatting = ({ children }) => {
           closable={false}
         >
           <div className="new-message rounded-lg ">
-            <Title heading="new Message" />
+            <Heading heading="new Message" />
             <div className="mt-4">
               <Input label={"To"} placeholder={"Type here.."}></Input>
               <label

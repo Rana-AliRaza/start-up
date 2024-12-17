@@ -41,6 +41,7 @@ function App() {
         <Route path="/tasks" element={ <Layout><Tasks /></Layout> } />
         <Route path="/inventory" element={ <Layout><Inventory /></Layout> } />
         <Route path="/sales" element={ <Layout><Sales /></Layout> } />
+        <Route path="/sales/view/*" element={ <Layout><Sales /></Layout> } />
         <Route path="/demographics" element={ <Layout><Demographics /></Layout> } />
         <Route path="/setting" element={ <Layout><Setting /></Layout> } />
 

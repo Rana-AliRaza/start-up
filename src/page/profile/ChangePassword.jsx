@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, Modal } from "antd";
 import { FaRegEdit } from "react-icons/fa";
-import Title from "../../components/Title";
 import Input from "../../components/shared/input";
 import Devider from "../../components/Devider";
+import Heading from "../../components/shared/heading";
 
 
 const ChangePassword = () => {
@@ -59,7 +59,7 @@ const ChangePassword = () => {
         >
           <div className="new-message rounded-lg  py-4 text-gray-700 text-sm">
             <div className="flex gap-x-2 items-center">
-              <Title heading="Change Password" path="/profile" />
+              <Heading heading="Change Password" path="/profile" />
               <Devider height={'2px'} />
 
             </div>
