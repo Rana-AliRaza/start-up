@@ -10,6 +10,7 @@ const AccessPagination = () => {
       onShowSizeChange={onShowSizeChange}
       defaultCurrent={3}
       total={400}
+      align={'center'}
     />
 
       

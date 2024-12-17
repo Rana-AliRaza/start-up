@@ -85,8 +85,8 @@ const Access = () => {
       <div className="access-table">
         <AccessTable />
       </div>
-      <div className="pagination">
-         <AccessPagination/>
+      <div className="pagination ">
+         <AccessPagination />
       </div>
     </section>
   );

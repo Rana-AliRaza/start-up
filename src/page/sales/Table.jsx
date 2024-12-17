@@ -3,6 +3,7 @@ import { Table } from "antd";
 import { useNavigate } from "react-router-dom";
 
 import deleteIcon from '/images/deleteIcon.png';
+import Pagination from "../access/Pagination";
 
 const PatientTable = () => {
   const navigate = useNavigate();
@@ -115,7 +116,8 @@ const PatientTable = () => {
   ];
 
   return (
-    <div className="table-section mt-4 w-full shadow-lg rounded-2xl overflow-hidden">
+    <>
+    <div className="table-section mt-4 w-full shadow-md rounded-2xl overflow-hidden">
       <Table
         columns={columns}
         dataSource={data}
@@ -132,6 +134,10 @@ const PatientTable = () => {
         }}
       />
     </div>
+    <div className="pagination mb-4">
+      <Pagination/>
+    </div>
+    </>
   );
 };
 

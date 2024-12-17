@@ -18,6 +18,7 @@ import Inventory from "./page/invertory";
 import Sales from "./page/sales";
 import Demographics from "./page/demographics";
 import Setting from "./page/setting";
+import View from "./page/sales/View";
 
 
 
@@ -41,7 +42,7 @@ function App() {
         <Route path="/tasks" element={ <Layout><Tasks /></Layout> } />
         <Route path="/inventory" element={ <Layout><Inventory /></Layout> } />
         <Route path="/sales" element={ <Layout><Sales /></Layout> } />
-        <Route path="/sales/view/*" element={ <Layout><Sales /></Layout> } />
+        <Route path="/sales/view/*" element={ <Layout><View /></Layout> } />
         <Route path="/demographics" element={ <Layout><Demographics /></Layout> } />
         <Route path="/setting" element={ <Layout><Setting /></Layout> } />
 
